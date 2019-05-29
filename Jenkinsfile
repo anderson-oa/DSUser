@@ -11,7 +11,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                echo 'Funfo...'
+                echo 'Funfo 1...'
+                echo 'Funfo 2...'
             }
         }
          stage('Image') {
