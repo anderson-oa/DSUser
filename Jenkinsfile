@@ -7,4 +7,14 @@ stages {
             sh 'dotnet build'
         }
     }
+    stage('Test') {
+        steps {
+            echo 'Testing...'
+        }
+    }
+     stage('Image') {
+        steps {
+            sh 'docker build -t dsuser .'
+        }
+    }
 }
